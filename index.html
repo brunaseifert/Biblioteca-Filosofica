@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Biblioteca Filosófica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+    <div class="header-decoration-top"></div>
+    <div class="container">
+        <div id="main-content">
+            <h1>Biblioteca Filosófica</h1>
+            <div id="autores-container"></div>
+        </div>
+        <aside id="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-title">Livros</div>
+                <ul class="sidebar-list" id="sidebar-livros">
+                    <!-- Livros serão inseridos via JS -->
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-title">Redes Sociais</div>
+                <div class="sidebar-socials">
+                    <a href="https://twitch.tv/" target="_blank" title="Twitch"><i class="fab fa-twitch"></i></a>
+                    <a href="https://discord.com/" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://www.instagram.com/brunaseifertt/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="ticket-info">
+        <div class="2025"></div>
+        <p>© 2025</p>
+        <p class="website-link">Bruna Seifert</p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // Preenche a lista de livros na sidebar
+      document.addEventListener('DOMContentLoaded', function() {
+        const autores = [
+          "As raízes do Romantismo",
+          "Livro do Desassossego",
+          "Mortal Questions"
+        ];
+        const ul = document.getElementById('sidebar-livros');
+        autores.forEach(titulo => {
+          const li = document.createElement('li');
+          li.textContent = titulo;
+          ul.appendChild(li);
+        });
+      });
+    </script>
+</body>
+</html>

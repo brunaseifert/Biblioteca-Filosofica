@@ -4,7 +4,7 @@ Interface web clássica para explorar livros e ideias filosóficas. Visual de pe
 
 ## Preview
 
-![Screenshot do site](print/Captura de tela de 2025-07-10 19-41-59.png)
+![Screenshot do site](print/screenshot.png)
 
 ## Principais recursos
 - Cards de livros/filósofos com citações e resumos

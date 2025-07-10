@@ -25,25 +25,21 @@ autores.forEach(autor => {
     const card = document.createElement('div');
     card.className = 'card';
 
-    
+    // Cria o HTML do cartão, com o conteúdo inicializado como escondido dentro de .card-content
     card.innerHTML = `
         <h2>${autor.nome}</h2>
         <div class="card-content content-hidden">
             <blockquote>“${autor.frase}”</blockquote>
             <p>${autor.bio}</p>
             <p><strong>Livro:</strong> ${autor.livro}</p>
-        </div>
-    `;
+        </div>`;
 
-  
     container.appendChild(card);
 
-   
     const title = card.querySelector('h2');
     const content = card.querySelector('.card-content');
 
-   
-    title.addEventListener('click', () => 
+    title.addEventListener('click', () => {
         content.classList.toggle('content-hidden');
         content.classList.toggle('content-visible');
     });

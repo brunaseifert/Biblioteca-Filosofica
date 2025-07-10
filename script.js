@@ -25,7 +25,7 @@ autores.forEach(autor => {
     const card = document.createElement('div');
     card.className = 'card';
 
-    // Cria o HTML do cartão, com o conteúdo inicializado como escondido dentro de .card-content
+    
     card.innerHTML = `
         <h2>${autor.nome}</h2>
         <div class="card-content content-hidden">
